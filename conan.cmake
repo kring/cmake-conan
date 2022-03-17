@@ -420,7 +420,7 @@ function(conan_cmake_detect_vs_runtime result)
 endfunction()
 
 function(_collect_settings result)
-    set(ARGUMENTS_PROFILE_AUTO arch build_type compiler compiler.version
+    set(ARGUMENTS_PROFILE_AUTO os arch build_type compiler compiler.version
                             compiler.runtime compiler.libcxx compiler.toolset
                             compiler.cppstd)
     foreach(ARG ${ARGUMENTS_PROFILE_AUTO})
